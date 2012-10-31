@@ -14,9 +14,4 @@ class EztvTests < Test::Unit::TestCase
     assert_kind_of(Nokogiri::XML::NodeSet, exp)    
   end
 
-  def test_set_node2
-    ez = Eztv.new
-    assert_kind_of(OpenURI::HTTPError, ez.set_node('p'))    
-  end
-
 end

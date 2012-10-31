@@ -32,13 +32,13 @@ class Eztv
 
   def node_checker(f, title, date)
     title2 = f.css('a[title]').text 
-    age = f.css('td.forum_thread_post').last.text #ile dni temu
+    age = f.css('td.forum_thread_post').last.text
     abort("\nDone!") if age.include? ">"
     if title2.downcase.include? title.downcase
       print "\n------------------------------------------\n"
       print "Title: " + title2 + "\n"
-      print "Magnet link: " + f.css('a.magnet').attribute('href') + "\n"
-      print date
+      print date + "\n"
+      print "Magnet link: " + f.css('a.magnet').attribute('href')
     end	
   end
 

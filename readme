@@ -1,0 +1,17 @@
+Autor: Dawid Milewski
+
+Wywołanie: ruby praktyki.rb 'opcjonalny argument, tytuł filmu'
+
+Klasa Eztv przegląda po kolei podstrony witryny eztv.it/page_x, 
+gdzie x to liczby od 0. Każdą podstronę sprawdza w poszukiwaniu klas
+forum_thread_post, gdzie znajdują się interesujące nas informacje. Odcinki
+dodane każdego dnia zapoczątkowane są datą, którą pobieramy i wypisujemy
+w odpowiednim momencie. Pobrane potrzebne nam dane odcinków sprawdzamy pod
+kątem wieku (czy nie są starsze niż tydzień), po czym wypisujemy ich tytuł,
+datę dodania oraz magnet link. Poszczególne odcinki oddzielone są od siebie
+serią myslników. Program kończy działanie po napotkaniu odcinka starszego niż
+tydzień.
+
+Plik tests.rb zawiera dwa szczątkowe testy, jeden sprawdza, czy program
+działa poprawnie, gdy podamy pusty argument. Drugi - czy funkcja set_node
+poprawnie zwraca obiekt XML'owy obiekt NodeSet. 
